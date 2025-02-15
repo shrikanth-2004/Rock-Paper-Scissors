@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="aaa"><h1>Rock Paper Scissors - Play Against AI</h1></div>
+  <img src="assets/logo.png" alt="aa" class="logo start-logo">
+  <div id="start-screen">
+    <p>Welcome to the Rock Paper Scissors game! You will play against an AI in a best-of-3 match. Click the button below to start the game.</p>
+    <button id="start-game-button">Start Game</button>
+  </div>
+
+  <div id="game-screen" class="hidden">
+    
+
+    <div class="animation-container">
+      <div class="hand player-hand">
+        <img id="player-hand-image" src="assets/rock.png" alt="Player Hand">
+        <figcaption>ME</figcaption>
+      </div>
+      <div class="vs-text">VS</div>
+      <div class="hand ai-hand">
+        <img id="ai-hand-image" src="assets/rock.png" alt="AI Hand">
+        <figcaption>AI</figcaption>
+
+      </div>
+    </div>
+    <div class="game">
+      <br><br>
+      <button class="choice" id="rock">Rock</button>
+      <button class="choice" id="paper">Paper</button>
+      <button class="choice" id="scissors">Scissors</button>
+    </div>
+
+    <div class="results">
+      <p>Player's Choice: <span id="player-choice">None</span></p>
+      <p>AI's Choice: <span id="ai-choice">None</span></p>
+      <p>Result: <span id="result">None</span></p>
+    </div>
+
+    <div class="score">
+      <p>Player Score: <span id="player-score">0</span></p>
+      <p>AI Score: <span id="ai-score">0</span></p>
+      <p>Rounds Played: <span id="rounds">0</span></p>
+    </div>
+
+    <div id="final-result-modal" class="modal">
+      <div class="modal-content">
+        <h2 id="final-winner-text"></h2>
+        <p id="game-finished-text"></p>
+        <button id="play-again-button">Play Again</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
